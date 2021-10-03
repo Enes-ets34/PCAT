@@ -1,0 +1,27 @@
+{
+  "name": "04-pcat",
+  "version": "1.0.0",
+  "description": "pcat photo app with express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enes-ets34/PCAT.git"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs",
+    "api"
+  ],
+  "author": "Enes Taha SARI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enes-ets34/PCAT/issues"
+  },
+  "homepage": "https://github.com/Enes-ets34/PCAT#readme",
+  "devDependencies": {
+    "prettier": "2.4.1"
+  }
+}
