@@ -1,0 +1,55 @@
+<%-include('components/_header.ejs')-%>	
+<body>
+	<div class="tm-page-wrap mx-auto">
+		<div class="position-relative">
+            <%-include('components/_navbar.ejs')-%>	
+			<div class="tm-welcome-container tm-fixed-header tm-fixed-header-3">
+				<div class="text-center">
+					<p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 mt-lg-0 mt-5 text-white mx-auto">
+                        Talk to Us<br>about any question you have
+                    </p>                	
+				</div>                
+            </div>
+
+            <div id="tm-fixed-header-bg"></div> <!-- Header image -->
+		</div>
+
+		<!-- Page content -->
+		<main>
+			<div class="container-fluid ">
+				<div class="mx-auto tm-content-container">					
+					<div class="row mt-3 mb-3 pb-3">
+
+                            <div class="col-md-10 mx-auto">
+
+                                <img src="img/about-3.jpg" alt="" class="img-fluid">	
+                                <div class="d-flex justify-content-between align-items-top mt-4">
+                                   <div>
+                                    <h2 class="tm-page-title my-2"><%= photo.title %></h2>
+                                    <p class="mt-4">
+                                        <%= photo.description %>
+                                      </p>
+                                   </div>
+                                    <div class="form-group tm-bg-gray p-5 mb-0">
+                                        <button type="submit" class="btn btn-primary rounded-0 d-block ml-auto mr-0 "><span>Update</span></button>
+                                        <button type="submit" class="btn btn-secondary rounded-0 d-block ml-auto mt-3  w-100"><span>Delete</span></button>
+                                      </div>
+                                </div>
+
+						</div>						
+					</div>
+                                                        			
+				</div>
+
+			
+			</div>
+		</main>
+
+        <%-include('components/_footer.ejs')-%>			
+	</div>
+
+	<script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/parallax.min.js"></script>    
+</body>
+</html>

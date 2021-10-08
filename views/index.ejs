@@ -51,13 +51,18 @@
                             <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
+                                <a href="/photos/<%= photos[i]._id %>" class="position-absolute tm-img-overlay">
                                     <i class="fas fa-play tm-overlay-icon"></i>
                                 </a>
                             </div>    
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title"><%= photos[i].title%></h3>
+                                <h3 class="tm-text-primary mb-3 text-center tm-catalog-item-title"><%= photos[i].title%></h3>
                                 <p class="tm-catalog-item-text"><%= photos[i].description %></p>
+                            
+                                <div class="d-flex align-items-end flex-column bd-highlight mb-3" style="height: 200px;">
+                                  
+                                    <div class="mt-auto p-2 bd-highlight"><small class="text-muted"><%= photos[i].created_at %></small></div>
+                                  </div>
                             </div>
                         </div>
                         <%}%>

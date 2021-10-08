@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: #29BBCC;
+    color: #e454d1;
     text-decoration: none;
 }
 
@@ -65,8 +65,8 @@ h2, p { color: #666666; }
 }
 
 .tm-bg-gray { background-color: #F4F4F4; }
-.tm-text-primary { color: #3399CC; }
-.tm-text-secondary { color: #3CAFAF; }
+.tm-text-primary { color: #f368e0; }
+.tm-text-secondary { color: #ff9ff3; }
 
 .tm-nav-link {
     color: white;
@@ -101,8 +101,10 @@ h2, p { color: #666666; }
     cursor: pointer;
 }
 
-.btn-primary { background-color: #3399CC; }
-.btn-primary:hover { background-color: #1674a0; }
+.btn-primary { background-color: #f368e0; }
+.btn-primary:hover { background-color: #e454d1; }
+.btn-secondary { background-color: #ff6b6b; }
+.btn-secondary:hover { background-color: #ff6b6b; }
 
 /*
     Button hover effect: https://tympanus.net/Development/CreativeButtons/
@@ -183,7 +185,7 @@ h2, p { color: #666666; }
 .tm-btn-submit:hover,
 .tm-btn-submit:focus {
     color: white;
-    background-color: #3399CC;
+    background-color: #f368e0;
 }
 
 .tm-btn-download span { padding-top: 10px; }
@@ -263,15 +265,15 @@ h2, p { color: #666666; }
 .tm-category-item { margin: 16px; }
 
 .tm-category-link {
-    color: #3399CC;
+    color: #f368e0;
     padding: 10px;
     border-bottom: 3px solid transparent;
 }
 
 .tm-category-link.active,
 .tm-category-link:hover {
-    border-bottom: 3px solid #3399CC;
-    color: #3399CC;
+    border-bottom: 3px solid #e454d1
+    color: #e454d1;
 }
 
 .tm-paging-link {
@@ -330,7 +332,7 @@ h2, p { color: #666666; }
 }
 
 .tm-share-button:last-child { margin-right: 0; }
-.tm-text-link { color: #3399CC; }
+.tm-text-link { color: #f368e0; }
 
 .tm-likes-box,
 .tm-btn-download {
