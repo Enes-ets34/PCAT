@@ -1,0 +1,68 @@
+<%-include('components/_header.ejs')-%>
+
+    <body>
+        <div class="tm-page-wrap mx-auto">
+            <div class="position-relative">
+                <%-include('components/_navbar.ejs')-%>
+                    <div class="tm-welcome-container tm-fixed-header tm-fixed-header-3">
+                        <div class="text-center">
+                            <p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 mt-lg-0 mt-5 text-white mx-auto">
+                                Talk to Us<br>about any question you have
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="tm-fixed-header-bg"></div> <!-- Header image -->
+            </div>
+
+            <!-- Page content -->
+
+            <main>
+                <div class="container-fluid ">
+                    <div class="mx-auto tm-content-container">
+                        <div class="row mt-3 mb-3 pb-3">
+
+                            <div class="col-md-8 mx-auto">
+
+
+                                <img src="<%= photo.image %>" alt="<%= photo.title %>" class="img-fluid mx-auto">
+                            </div>
+                                <div class="col-md-10 mx-auto mt-4">
+                                    <form method="POST" action="/photos/<%= photo._id %>?_method=PUT" class="tm-contact-form" encType="multipart/form-data">
+                                        <div class="form-group">
+                                            <input type="text" name="title" class="form-control rounded-0"
+                                              value="<%= photo.title %>"  placeholder="Photo Title" required />
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <textarea rows="8" name="description" class="form-control rounded-0"
+                                                placeholder="Photo Description" required><%= photo.description %></textarea>
+                                        </div>
+                                   
+
+                                        <div class="form-groupmb-0">
+                                            <button type="submit"
+                                                class="btn btn-warning rounded-0 d-block ml-auto mr-0 tm-btn-animate tm-btn-submit tm-icon-submit"><span>Update</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </main>
+
+            <%-include('components/_footer.ejs')-%>
+        </div>
+
+        <script src="/js/jquery-3.4.1.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/parallax.min.js"></script>
+    </body>
+
+    </html>
