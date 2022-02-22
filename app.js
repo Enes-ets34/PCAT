@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 // CONNECT DB
 mongoose.connect("mongodb://localhost/pcat-test-db", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useUnifiedTopology: true,  
 });
 
 // MIDDLEWARES
