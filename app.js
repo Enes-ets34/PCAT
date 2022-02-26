@@ -17,10 +17,14 @@ app.use(
 app.set("view engine", "ejs");
 
 // CONNECT DB
-mongoose.connect("mongodb://localhost/pcat-test-db", {
+mongoose.connect("mongodb+srv://enes:lBR2C4f5qGT4iTip@cluster0.iw7a6.mongodb.net/pcat-db?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,  
-});
+}).then(()=>{
+  console.log("DB CONNECTED!");
+}).catch(err=>{
+  console.error(err);
+})
 
 // MIDDLEWARES
 app.use(express.static("public"));
@@ -46,7 +50,7 @@ app.put("/photos/:id", photoControllers.updatePhoto);
 //Delete Photo
 app.delete("/photos/:id", photoControllers.deletePhoto);
 
-const port = 3000;
+const port = process.env.PORT||4000;
 app.listen(port, () => {
   console.log(`Sunucu ${port} portunda çalışıyor...`);
 });
