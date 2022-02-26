@@ -212,6 +212,7 @@ h2, p { color: #666666; }
 
 .tm-catalog-item {
     max-width: 462px;
+
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
@@ -229,9 +230,8 @@ h2, p { color: #666666; }
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.4);
     cursor: pointer;
-    transition: all 0.3s ease: ;
+    transition: all 0.3s ease ;
 }
 
 .tm-overlay-icon {
